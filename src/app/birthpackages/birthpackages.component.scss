@@ -1,0 +1,90 @@
+.header{
+    width: 100%;
+    padding-top: 122%;
+    background: url(/assets/packagesheader.svg), url(/assets/packagesheader.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    .whats{
+        position: absolute;
+        display: block;
+        top: 75%;
+        left: 9%;
+        width: 26%;
+        padding-top: 27%;
+        cursor: pointer;
+    }
+}
+
+.pack-wrapper{
+    text-align:center;
+    
+    .pack{
+        overflow: hidden;
+        text-align:right;
+        box-sizing : border-box;
+        width:90%;
+        display:inline-block;
+        background:#EDEDED;
+        margin-top:20px;
+        border-radius:25px;
+
+        .headline{
+            background:#83247C;
+            border-radius:25px 25px 0px 0px;
+            box-sizing: border-box;
+            padding:10px;
+            text-align:center;
+            color:white;
+            font-size:30px;
+        }
+
+        .pic{
+            width:100%;
+            padding-top:63%;
+        }
+
+        .content{
+            padding-left:30px;
+            padding-right:20px;
+            
+            .open{
+                display:grid;
+                grid-template-columns: repeat(2, 1fr);
+                align-items: center;
+                h3{
+                    color:#83247C;
+                    font-size:24px;
+                    font-weight:100;
+                    margin-top:10px;
+                    margin-bottom:10px;
+                }
+
+                .arrow{
+                    color:#83247C;
+                    font-size:24px;
+                    justify-self: end;
+                    cursor: pointer;
+                }
+            }
+
+            .price-squar{
+                background:#83247C;
+                box-sizing: border-box;
+                color:white;
+                border-radius:25px;
+                font-size:20px;
+                text-align: center;
+                padding-bottom:10px;
+
+                .red-colored{
+                    padding:10px;
+                    box-sizing: border-box;
+                    border-radius:25px;
+                    background:#E30E18;
+                }
+            }
+        }
+    }
+}
+

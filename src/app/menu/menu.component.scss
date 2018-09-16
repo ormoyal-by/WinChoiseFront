@@ -1,0 +1,110 @@
+.top-strip{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    align-items: center;
+    justify-items: center;
+    background:#83247C;
+    padding:15px;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:999;
+    width:100%;
+    box-sizing: border-box;
+
+    .phone-icon{
+        display:block;
+        padding-right: 10px;
+        background: url(/assets/phone.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 35px;
+        position: relative;
+        justify-self: end;
+    }
+    .phone-icon:after{
+        content:'';
+        position: absolute;
+        height:100%;
+        right:-10px;
+        border-right:1px solid #C294BF;
+        top:0;
+    }
+
+    .logo{
+        display:block;
+        background: url(/assets/logo.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 160px;
+        height: 50px;
+    }
+
+    .humb-icon{
+        padding-right: 10px;
+        background: url(/assets/hum.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 35px;
+        position: relative;
+        justify-self: start;
+        cursor: pointer;
+    }
+
+    .humb-icon-open{
+        padding-right: 10px;
+        background: url(/assets/x.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 35px;
+        position: relative;
+        justify-self: start;
+        cursor: pointer;
+    }
+ } //END TO TOPSTRIP
+
+
+.menu-content{
+    top:0;
+    left:0;
+    visibility: hidden;
+    opacity: 0;
+    position:fixed;
+    width:100%;
+    height:100%;
+    z-index:99;
+    background:rgba(255,255,255,0.9);
+    display:grid;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    transition: opacity 600ms, visibility 600ms;
+    ul{
+        padding:0;
+        margin:0;
+        list-style:none;
+        li{
+            padding-bottom:20px;
+            padding-top:20px;
+            border-bottom:1px solid #83247C;
+            a{
+                color:#83247C;
+                font-size:35px;
+                text-decoration:none;
+            }    
+        }
+        li:last-child{
+            border-bottom:1px solid transparent;
+        }
+    }
+}
+
+.menu-content-show{
+    visibility: visible;
+    opacity: 1;
+}

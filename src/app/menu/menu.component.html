@@ -1,0 +1,17 @@
+<!-- DESKTOP MENU -->
+
+<!--MOBILE MENU-->
+
+<div class="top-strip">
+    <div (click)="openMobileMenu()" [ngClass]="{'humb-icon-open':isMenuOpen, 'humb-icon':!isMenuOpen}" ></div>
+    <a class="logo" href="/"></a>
+    <a class="phone-icon" href="tel:08650000"></a>
+</div>
+
+<div class="menu-content" [ngClass]="{'menu-content-show':isMenuOpen}" >
+    <ul >
+       <li><a routerLink="/" (click)="openMobileMenu()">חבילות לידה</a></li> 
+       <li><a routerLink="productdetails" (click)="openMobileMenu()">מפרט המוצרים</a></li> 
+       <li><a routerLink="biladi" (click)="openMobileMenu()">מבצעי תאומים</a></li> 
+    </ul>
+</div>
